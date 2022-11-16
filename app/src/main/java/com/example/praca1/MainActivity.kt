@@ -49,5 +49,29 @@ class MainActivity : AppCompatActivity() {
         }
 
 
+        val silniaRun = findViewById<Button>(R.id.runSilnia)
+
+        val silniaInput = findViewById<EditText>(R.id.silnia)
+
+
+        silniaRun.setOnClickListener {
+            val inputInt = silniaInput.text.toString().toInt()
+            if(inputInt<=10 && inputInt>=0) {
+                var liczbaZSilni = 1
+                if (inputInt == 0 || inputInt == 1) {
+                    liczbaZSilni = 1
+                } else {
+                    for (i in 2..inputInt)
+                        liczbaZSilni *= i
+                }
+                val text = liczbaZSilni.toString()
+                findViewById<TextView>(R.id.wynik1).text = (text)
+            }
+            else{
+                findViewById<TextView>(R.id.wynik1).text = ("blad wpisania")
+            }
+        }
+
+
     }
 }

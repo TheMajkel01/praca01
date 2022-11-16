@@ -51,7 +51,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="160dp"
-        android:hint="silnia"
+        android:hint="liczba naturalna do 10"
         app:layout_constraintBottom_toBottomOf="parent"
         tools:layout_editor_absoluteX="-1dp" />
 
@@ -65,15 +65,6 @@
         tools:layout_editor_absoluteX="176dp" />
 
     <TextView
-        android:id="@+id/wynik"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toTopOf="@+id/silnia"
-        app:layout_constraintEnd_toStartOf="@+id/next"
-        app:layout_constraintStart_toEndOf="@+id/prev"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
-
-    <TextView
         android:id="@+id/wynik1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -82,17 +73,28 @@
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toEndOf="@+id/prev"
         app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.412" />
+        app:layout_constraintVertical_bias="0.34" />
 
     <TextView
         android:id="@+id/WYNIKtext"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="72dp"
         android:text="WYNIK"
         app:layout_constraintBottom_toTopOf="@+id/silnia"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.006" />
+        app:layout_constraintVertical_bias="0.108" />
+
+    <Button
+        android:id="@+id/runSilnia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SILNIA"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/silnia"
+        app:layout_constraintVertical_bias="0.241" />
 </androidx.constraintlayout.widget.ConstraintLayout>
